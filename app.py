@@ -5,7 +5,6 @@ st.title("POSITIVE or NEGATIVE SENTENCE")
 label=st.subheader("SENTENCE")
 
 area=st.text_area(" ", value="", height=200, max_chars=None, key=None, help=None,placeholder="Hi Welcome Please Enter the Sentence....")
-# print(len(area))
 
 
 blob=TextBlob(area)
