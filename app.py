@@ -17,3 +17,11 @@ if st.button("Predict"):
             st.subheader("Negative Sentence")
     else:
         st.subheader("Enter  Max 5 words")
+hide="""
+<style>
+#MaimMenu{visibility:hidden;}
+footer{visibility:hidden;}
+header{visibility:hidden;}
+</style>
+"""
+st.markdown(hide,unsafe_allow_html=True)
