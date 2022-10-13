@@ -1,8 +1,8 @@
 from textblob import TextBlob
 import streamlit as st
 
-st.title("POSITIVE or NEGATIVE SENTENCE")
-label=st.subheader("SENTENCE")
+st.title("FEEDBACK CLASSIFIER")
+# label=st.subheader("Feedback")
 
 area=st.text_area(" ", value="", height=200, max_chars=None, key=None, help=None,placeholder="Hi Welcome Please Enter the Sentence....")
 
@@ -12,9 +12,9 @@ if st.button("Predict"):
     if len(area)>20:
         if blob.sentiment.polarity >0:
             # st.write(area)
-            st.subheader("Positive Sentence")
+            st.subheader("Positive Feedback")
         else:
-            st.subheader("Negative Sentence")
+            st.subheader("Negative Feedback")
     else:
         st.subheader("Enter  Max 5 words")
 hide="""
